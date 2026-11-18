@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    android:background="#121212">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🛰️ GPS Транслятор"
+        android:textColor="#FFCC00"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Передача GPS со смартфона на планшет"
+        android:textColor="#AAAAAA"
+        android:textSize="14sp"
+        android:layout_marginBottom="28dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="IP-адрес планшета в сети:"
+        android:textColor="#CCCCCC"
+        android:textSize="14sp"
+        android:layout_marginBottom="4dp" />
+
+    <EditText
+        android:id="@+id/etTabletIp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Например: 192.168.43.15"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#666666"
+        android:background="@android:drawable/editbox_background_normal"
+        android:padding="12dp"
+        android:inputType="textUri"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Статус: Остановлено"
+        android:textColor="#FF5252"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="12dp" />
+
+    <TextView
+        android:id="@+id/tvCoords"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Координаты: --\nСкорость: --\nТочность: --"
+        android:textColor="#81D4FA"
+        android:fontFamily="monospace"
+        android:background="#1E1E1E"
+        android:padding="16dp"
+        android:layout_marginBottom="24dp" />
+
+    <Button
+        android:id="@+id/btnToggle"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="ЗАПУСТИТЬ ТРАНСЛЯЦИЮ"
+        android:backgroundTint="#FFCC00"
+        android:textColor="#121212"
+        android:textStyle="bold"
+        android:textSize="16sp" />
+
+</LinearLayout>
